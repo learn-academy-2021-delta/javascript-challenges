@@ -6,6 +6,8 @@ This repository holds the vanilla JavaScript pair programming challenges for the
 - Anything wrapped in `< >` is an indication that this will be named uniquely, the `< >` are NOT actually added to the command
 - `$` is an indication of a command line prompt, the `$` is not included
 - Anything in `( )` is informational and not included in the command
+- The term local/locally means on your personal computer
+- The term remote means on GitHub
 
 
 ### Naming Conventions
@@ -17,6 +19,7 @@ Branches and file names should be in all lowercase letters:
 ### Informational Commands
 Use this informational command to tell you what files have been modified and what phase of the git process you are on:  
 - $ `git status`  
+
 Use this informational command to see what branch you are currently on:  
 - $ `git branch`
 
@@ -52,6 +55,7 @@ Use these commands if the repo you are working on has a branch but it is NOT on 
 
 ### Adding Local Code to GitHub
 Use these commands to add the code you have on your local machine to GitHub:  
+- $ `pwd` (make sure you are in the repository level) 
 - $ `git status` (informational command, ensure you are on the correct branch and in the correct directory)
 - $ `git add .`
 - $ `git commit -m "message describing the work that was accomplished"`
