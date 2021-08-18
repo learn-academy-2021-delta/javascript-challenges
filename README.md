@@ -46,7 +46,7 @@ Use this command to move to a branch that exist on your local machine:
 
 ### Moving to an Existing GitHub Branch
 Use these commands if the repo you are working on has a branch but it is NOT on your local machine:  
-- $ `git fetch`
+- $ `git fetch origin <branch-name>`
 - $ `git checkout <branch-name>`
 
 
