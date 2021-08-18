@@ -33,7 +33,7 @@ Use this command if you DO have the repository on your local machine but DON'T h
 
 ### Create a Branch
 Use this command if you need to create a branch that does not exist anywhere:  
-- $ `git checkout -b <topic-initial1-initial2>` (ex. arrays-a-s)
+- $ `git checkout -b <topic-initials1-initials2>` (ex. arrays-aw-sp)
 
 
 ### Moving to an Existing Local Branch
