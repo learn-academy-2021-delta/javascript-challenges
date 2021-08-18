@@ -26,7 +26,7 @@ Use this informational command to see what branch you are currently on:
 
 ### Cloning a Repository
 Use this command if you don't have the repository (folder) on your local machine:   
-- $ `git clone <repo-url> (pasted from clipboard on GitHub)`
+- $ `git clone <repo-url>` (pasted from clipboard on GitHub)
 
 
 ### Updating an Existing Repository
