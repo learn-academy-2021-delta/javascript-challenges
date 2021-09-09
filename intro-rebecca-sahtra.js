@@ -32,15 +32,39 @@ console.log("LEARN".length === 5 && "student".length === 7);
 // Does "LEARN".length strictly equal 5 OR "Student".length strictly equal 10?
 console.log("LEARN".length === 5 || "student".length === 7);
 // Does "LEARN" contain the subset "RN"?
+console.log("17)");
+console.log("LEARN".includes("RN"));
 // Does "LEARN" contain the subset "rn"?
+console.log("18)");
+console.log("LEARN".includes("rn"));
 // Does "LEARN"[0] strictly equal "l"?
+console.log("19)");
+console.log("LEARN"[0] === "l");
 // Modify the code from the previous question to return true.
-// Write the code that will log theAnswer divided by 2.
-// Write the code that will log the length of theQuestion.
-// Write the code that will log the index of the character "f" in the theQuestion.
-// Write the code that will log the concatenation of the two variables.
-// Write the code that will log "the universe".
-// Write the code that will log the character "l" from theQuestion.
-// Write the code that will log whether theQuestion.length is greater than theAnswer.
+console.log("20)");
+console.log("LEARN"[0] === "L");
+
 var theQuestion = "life, the universe, and everything"
 var theAnswer = 42
+// Write the code that will log theAnswer divided by 2.
+console.log("21)");
+console.log(theAnswer/2);
+// Write the code that will log the length of theQuestion.
+console.log("22)");
+console.log(theQuestion.length);
+// Write the code that will log the index of the character "f" in the theQuestion.
+console.log("23)");
+console.log(theQuestion.indexOf("f"));
+// Write the code that will log the concatenation of the two variables.
+console.log("24)");
+console.log(theQuestion + " " + theAnswer);
+// Write the code that will log "the universe".
+console.log("25)");
+console.log(theQuestion.slice(6, 18));
+// Write the code that will log the character "l" from theQuestion.
+console.log("26)");
+console.log(theQuestion.charAt(0));
+// Write the code that will log whether theQuestion.length is greater than theAnswer.
+console.log("27)");
+console.log(theQuestion.length > theAnswer);
+
