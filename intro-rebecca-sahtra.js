@@ -74,6 +74,7 @@ console.log(theQuestion.indexOf("f"));
 // Write the code that will log the concatenation of the two variables.
 console.log("24)");
 console.log(theQuestion + " " + theAnswer);
+console.log(theQuestion.concat(theAnswer));
 // Write the code that will log "the universe".
 console.log("25)");
 console.log(theQuestion.slice(6, 18));
@@ -84,3 +85,13 @@ console.log(theQuestion.charAt(0));
 console.log("27)");
 console.log(theQuestion.length > theAnswer);
 
+console.log("Built-in Methods");
+//messing arround with built-in methods
+
+var boolean = true;
+console.log(boolean.valueOf());
+
+var myName = "Rebecca";
+console.log(myName.charCodeAt(0));
+
+console.log(Date());
