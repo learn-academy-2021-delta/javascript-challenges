@@ -34,22 +34,45 @@
 
 // Write a statement that takes two variables that are numbers and outputs the larger number. If the numbers are equal, output "the numbers are the same".
 
-var myNumber1 = 100
-var myNumber2 = 42
-if (myNumber1 === myNumber2) {
-    console.log("the numbers are the same")
-} else if (myNumber1 > myNumber2) {
-    console.log(myNumber1)
-} else if (myNumber1 < myNumber2) {
-    console.log(myNumber2)
-} else {
-    console.log("try again later")
-}
+// var myNumber1 = 100
+// var myNumber2 = 42
+// if (myNumber1 === myNumber2) {
+//     console.log("the numbers are the same")
+// } else if (myNumber1 > myNumber2) {
+//     console.log(myNumber1)
+// } else if (myNumber1 < myNumber2) {
+//     console.log(myNumber2)
+// } else {
+//     console.log("try again later")
+// }
 
 // Write a statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+// var myNumber = 2
+
+// if(myNumber === 0){
+//     console.log("The number is zero")
+// }else if(myNumber % 2 == 0) {
+//     console.log("The number is even.")
+// }else{
+//     console.log("The number is odd.")
+// }
 
 // STRETCH Challenges
 // Write a statement that takes a variable of a grade percentage and logs the letter grade for that percentage, if the grade is 100% log "perfect score", if the grade is zero log "no grade available."
+var gradePercent = 99
+
+switch (gradePercent) {
+    case gradePercent === 100:
+      console.log('perfect score');
+      break;
+    case gradePercent > 89:
+      console.log('You have an A');
+      break;
+    case gradePercent === 0:
+      console.log(`no grade available`);
+      default:
+  }
+  
 
 // Write a statement that takes a variable of a boolean, number, or string data type and logs the data type of the variable. HINT: Check out the JavaScript typeof operator.
 
