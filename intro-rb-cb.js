@@ -90,3 +90,4 @@ console.log(theQuestion[0]);
 
 //Write the code that will log whether theQuestion.length is greater than theAnswer.
 console.log(theQuestion.length > theAnswer);
+
