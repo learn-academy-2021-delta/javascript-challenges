@@ -92,5 +92,5 @@ console.log(typeof(dataType))
 
 // Create a password checker using a single conditional statement. If a user inputs a password with 12 or more characters AND the password includes !, then log "That is a mighty strong password!" If the user’s password is 8 or more characters OR includes !, then log "That password is strong enough." Log "That is not a valid password." for every other input.
 
-var passwordChecker = 
+var passwordChecker 
 
