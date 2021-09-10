@@ -25,16 +25,16 @@
 
 
 // Write a statement that takes two variables that are numbers and outputs the larger number. If the numbers are equal, output "the numbers are the same".
-var firstNumber = 6
-var secondNumber = 6
-if (firstNumber > secondNumber){
-  console.log(`${firstNumber}`)
-}else if (firstNumber < secondNumber){
-  console.log(`${secondNumber}`)
-}else{
-  console.log("the numbers are the same")
-}
-//
+// var firstNumber = 6
+// var secondNumber = 6
+// if (firstNumber > secondNumber){
+//   console.log(`${firstNumber}`)
+// }else if (firstNumber < secondNumber){
+//   console.log(`${secondNumber}`)
+// }else{
+//   console.log("the numbers are the same")
+// }
+// //
 //
 //
 //
