@@ -29,7 +29,7 @@ else if(num2>num1){
 else{console.log("numders are the same")}
 
 //Write a statement that takes a variable of a number and logs whether the number is odd, even, or zero.
-let num3=3
+let num3=30
 if(num3%2===0){
     console.log("even")
 }
