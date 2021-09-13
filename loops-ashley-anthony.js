@@ -28,19 +28,16 @@
 // }
 
 // Looping over an array. Consider this variable:
-
+// Create a loop that will log the highest number from the array. Expected output --> 6
 var nums = [3, 57, -9, 20, 67]
-var largest = 0
-for (let i = 0; i < nums.length; i++) {
-  if (nums[i] > largest) {
-          largest = array[i];
+for (i = nums; nums < 68; nums++) {
+  console.log(Math.max(nums))
+  if (nums<67) {
 
-  console.log(largest);​
-}
+  }
 }
 
 
-// Create a loop that will log the highest number from the array. Expected output --> 67
 // Create a loop that will log the lowest number from the array Expected output --> -9
 // Create a loop that will log the remainder of each number when divided by 2. Expected output --> 1, 1, -1, 0, 1
 // Looping over a string. Consider this variable:
