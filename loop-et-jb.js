@@ -12,13 +12,13 @@
 
 // Create a for loop that logs each even number from 1-20, and in the place of every odd number, returns the word "ODD" Expected output --> ODD, 2, ODD, 4, ODD, 6 ...etc
 //let num = 20
-for (let i=1; i<=20; i++) {  
-    if (i % 2 !== 0) {
-        console.log("ODD")
-    } else if (i % 2 === 0) {
-        console.log(i)
-    }
-}
+// for (let i=1; i<=20; i++) {  
+//     if (i % 2 !== 0) {
+//         console.log("ODD")
+//     } else if (i % 2 === 0) {
+//         console.log(i)
+//     }
+// }
 
 
 // Looping over an array. Consider this variable:
@@ -83,3 +83,25 @@ for (let i=1; i<=20; i++) {
 //         console.log(i)
 //     }
 // }
+
+
+// ------------Extra Practice-----------------
+
+// Reversing a string using a for loop
+// let firstName = "John"
+// let reverseString = ""
+// for (let i=firstName.length - 1; i>=0; i--) {
+//     reverseString += firstName[i]
+// }
+// console.log(reverseString)
+
+
+// Removing duplicates from an array
+// let students = ["elias", "john", "kelly", "elias", "john"]
+// let unique = []
+// for (let i=0; i<students.length; i++) {
+//     if (!unique.includes(students[i])) {
+//         unique.push(students[i])
+//     }
+// }
+// console.log(unique)
