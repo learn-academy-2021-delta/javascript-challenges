@@ -63,3 +63,12 @@ for(i=0; i< myString.length;i++){
 }
 
 string();
+
+// Even or Odd: Write a for loop that iterates from 0 to 15. For each iteration, it will check if the current number is odd or even, and display the appropriate outcome. Expected output --> "0 is even" "1 is odd" "2 is even" ...etc
+for(i=0; i<=15; i++) {
+    if(i % 2 === 0) {
+        console.log(`${i} is EVEN`)
+    } else {
+        console.log(`${i} is ODD`)
+    }
+}
