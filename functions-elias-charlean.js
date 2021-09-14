@@ -74,6 +74,79 @@ const isLonger=(str1,str2)=>{
 }
 }
 console.log(isLonger("Elias","Charlean"))
-// Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
+// Write a function named greaterNum that takes two numbers as 
+//arguments and returns whichever number is the greater (higher) 
+//number.
+const greaterNum=(num5,num6)=>{
+ return Math.max(num5,num6)
+}
+console.log(greaterNum(10,20))
 
-// Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
+// Write a function named yelling that takes a string as an argument 
+//and return the string in all uppercase case letters.
+const yelling=(string)=>{
+  return string.toUpperCase()
+}
+console.log(yelling("Charlean"))
+//The World Translator
+//(a) Write a function named helloWorld that takes a language code 
+//(e.g. "es", "de", "en") as an argument and returns "Hello World!" 
+//in the given language. Ensure you function works for at least 5 languages.
+//(b) Have your function default to returning English.
+const helloworld=(language)=>{
+    if(language==="spanish"){
+      return "Hola Mundo"
+    }
+    else if(language==="arabic"){
+      return "Selam weealekum"
+    }else if(language==="french"){
+      return "Bonjour le monde"
+    }else if(language==="dutch"){
+      return "Hallo wereld"
+    }else{
+      return "Hello world"
+    }
+  
+    }
+
+console.log(helloworld())
+//The Pluralizer
+//(a) Write a function named pluralizer that takes a number and a singular noun 
+//as arguments and returns the number and pluralized form of the noun, if necessary.
+const pluralizer=(num8,noun)=>{
+  if(num8>=2){
+    return `${num8} ${noun}s`
+  }else if(num8=1){
+    return `${num8} ${noun}`
+  }
+}
+console.log(pluralizer(3,"cow"))
+//pluralizer(5, "cat")
+// expected output: "5 cats"
+
+//pluralizer(1, "dog")
+// expected output: "1 dog"
+//(b) Enhance your function so it can handle a few collective nouns like "sheep", "goose",
+// "child", "person" and "species".
+
+const pluralizer1=(num9,noun1)=>{
+  if(num9>=2 && noun1==="sheep"||"species"){
+    return `${num9} ${noun1}`
+  }else if(num9>=2 && noun1==="child"){
+    return `${num9} ${noun1}ren`
+  }else if(num9>=2&&noun1==="goose"){
+    return `${num9}`+ " "+"geese"
+  }else if(num9>=2){
+      return `${num9} ${noun1}s`
+    }else {
+      return `${num9} ${noun1}`
+    }
+  }
+
+console.log(pluralizer1(2,"goose"))
+  
+  
+//   else if(num9=1){
+//     return `${num8} ${noun1}`
+//   }
+// }
