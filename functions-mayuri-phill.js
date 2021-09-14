@@ -59,10 +59,10 @@
 
 const divisibleBy = (number1, number2) => {
   if (number1 % number2 === 0){
-    return number1 % number2
+    return `${number1} is evenly divisible by ${number2}`
   }
 }
-console.log(divisibleBy(4, 2));
+console.log(divisibleBy(15, 4));
 //output- "10 is divisible by 5"
 
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
