@@ -32,9 +32,38 @@
 
 // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
 
+//input- name triple and a number
+//write the input number multiplied by 3
+//
+// const triple = (number) => {
+//   return number * 3
+// }
+// console.log(triple(7));
+//output- number multiplied by 3
+
+
 // Write a function named multiply that takes two numbers as arguments and returns the result of the numbers multiplied together.
 
+//input- name multiply with two numbers
+
+// const multiply = (number1, number2) => {
+//   return number1 * number2
+// }
+// console.log(multiply(4, 8));
+//output- product of the two numbers
+
+
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
+
+//input-divisibleBy takes two numbers
+
+const divisibleBy = (number1, number2) => {
+  if (number1 % number2 === 0){
+    return number1 % number2
+  }
+}
+console.log(divisibleBy(4, 2));
+//output- "10 is divisible by 5"
 
 // Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
 
@@ -43,4 +72,3 @@
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
 
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
-
