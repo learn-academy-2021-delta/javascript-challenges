@@ -88,6 +88,22 @@ console.log(isLonger("Hello!","Yay!"));
 
 // Write a function named greaterNum that takes two numbers as arguments and returns whichever number is the greater (higher) number.
 
+const greaterNum = (num1, num2) =>{
+  if (typeof num1 !== "number" || typeof num2 !== "number" ){
+    return "not a number"
+  } else if (num1 === num2){
+    return "These strings are equal."
+  } else if (num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  }
+}
+
+console.log(greaterNum(9,9))
+
+
+
 // Write a function named yelling that takes a string as an argument and return the string in all uppercase case letters.
 
 // STRETCH Challenges
