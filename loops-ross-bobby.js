@@ -53,7 +53,7 @@ for(let n=0; n<nums.length; n++){
 };
 
 // 3. Looping over a string. Consider this variable:
-// var myString = "learn student"
+ var myString = "learn student"
 // Write the code that will log the number of times the letter "e" occurs in the string. Expected output --> 2
 // STRETCH Challenges
 // Even or Odd: Write a for loop that iterates from 0 to 15. For each iteration, it will check if the current number is odd or even, and display the appropriate outcome. Expected output --> "0 is even" "1 is odd" "2 is even" ...etc
