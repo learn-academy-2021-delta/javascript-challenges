@@ -55,20 +55,78 @@ console.log(myString(comboArr));
 // Create a function that takes in an array of numbers and returns the sum.
 var addThese1 = [1, 2, 3, 4]
 // // --> 10
-
-
-
-// var addThese2 = []
+var addThese2 = []
 // // --> 0
+
+//define a new func, define a new variable within the func, create for loop to iterate through array, at each iteration add array element i to the new variable num and return num
+
+const sumOf =(array)=>{
+    let num = 0
+    for(let i = 0; i < array.length; i++){
+        num += array[i]
+    }
+    return num
+}
+console.log(sumOf(addThese2))
+
+
+
 // Create a function that takes in an array of numbers and returns the index of the largest number.
-// var indexHighestNumber = [1, 4, 2, 3]
+var indexHighestNumber = [1, 4, 2, 3]
 // // --> 1
+
+//define a new func, define a variable to store largest number in, create a for loop to iterate through the array, at each iteration apply the condition if the variable is larger than the array element at array i to store the larger value in the new variable, 
+
+const largestNum = (array) => {
+    let bigNum = 0
+    let indexBigNum = 0
+    for(let i = 0; i < array.length; i++){
+        if(array[i] > bigNum){
+            bigNum = array[i]
+            indexBigNum = i
+        }
+    }
+    return indexBigNum
+}
+console.log(largestNum(indexHighestNumber));
+
 // STRETCH Challenges
 
 // Create a function that takes in two arrays and returns one array with no duplicate values.
-// var arr1 = [3, 7, 10, 5, 4, 3, 3]
-// var arr2 = [7, 8, 2, 3, 1, 5, 4]
+var arr1 = [3, 7, 10, 5, 4, 3, 3]
+var arr2 = [7, 8, 2, 3, 1, 5, 4]
 // // --> [3, 7, 10, 5, 4, 8, 2, 1]
+
+const bestArr = (arr1, arr2) => {
+    let catArr = arr1.concat(arr2);
+    console.log(catArr);
+    let newArr = [];
+    // let uniqueArr = [...newSet catArr]
+    for(let i = 0; i < catArr.length; i++){
+        if(newArr.length === 0){
+            newArr.push(arr1[0]);
+        } else if (newArr.length > 0){
+            for(let j= 0; j<newArr.length; j++){
+                if (newArr[i] === catArr[j]){
+
+                } 
+            }
+        }
+    }
+        return newArr
+}
+console.log(bestArr(arr1,arr2))
+
+// in for loop check if @ array [i] !== anything in newarray[i], in that case 
+
+// for(let x = 0; x < arr1.length; x++){
+//     for(let y = 0; y < arr2.length; y++){
+//         if(arr1[x] !== arr2[y]){
+//             emptyArr.push(arr1[x])
+//         }
+//     }
+// }
+
 // Create a function that takes in two numbers as arguments and returns an array the length of the first number filled with the second number.
 // var arrayLength = 6
 // var arrayValue = 0
