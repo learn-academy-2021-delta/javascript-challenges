@@ -19,16 +19,38 @@ const onlyOdds = (array) => {
   })
 }
 console.log(onlyOdds(arr2));
+
 // Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
-// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // --> "nicework"
+
+const stringOnly = (array) => {
+  let newString =[]
+  return array.filter(value => {
+    // newString = typeof value === "string"
+    return typeof value === "string"
+  })
+}
+console.log(stringOnly(comboArr).join(""))
 
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
 
-
+const stringAndNum =(array) => {
+  let goodString = []
+  return array.filter(value => {
+    for (let i = 0; i < array.length; i++) {
+      if(typeof array === "string"){
+      console.log(goodString.push(array[i]))
+      }else if (typeof array === "number"){
+        console.log(goodString.push(array[i]))
+      }
+    }
+  })
+}
+console.log(stringAndNum(filterArrayValues))
 // STRETCH Challenges
 
 // Create a function that takes in a string and returns a new string with all the vowels removed.
