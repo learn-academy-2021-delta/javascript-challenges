@@ -22,16 +22,36 @@ console.log(oddNum(arr2))
 //Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
 var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
 // // --> "nicework"
+
 const createString = (array) => {
-  let newArr = array.filter(value => {
+  let newArr = array.filter(value => { //created a variable to store the new array to be modified in line 30
     return typeof value === "string"
   })
-  return newArr.join("")
+  return newArr.join("") //modifies the array we saved to return a string
 }
 console.log(createString(comboArr))
+
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-// var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 // // --> [58, "abcd", true]
+
+//create a function: takes an array -> returns array
+//filter() -> filter certain data types (we don't want false, null, 0, or "" values)
+  //Boolean(value) !== false
+
+
+
+
+
+//could use Boolean() -> forces a value into a Boolean value
+// FALSY VALUES: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+console.log(Boolean(58)) //numbers return true 
+console.log(Boolean(false)) //false will return false
+console.log(Boolean("")) //empty string will return false
+console.log(Boolean(0))  //0 will return false
+console.log(Boolean(null)) //null will return false
+
+
 // Create a function that takes in a string and returns a new string with all the vowels removed.
 // var str = "javascript is awesome"
 // // --> "jvscrpt s wsm"
