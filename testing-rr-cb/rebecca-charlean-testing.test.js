@@ -15,7 +15,16 @@ const areYouTired = (string)=>{
   }
 }
 
+
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
+
+describe("Are you stressed", () =>{
+  it("testing whether or not a person is stressed", ()=>{
+    expect(stressedOut("yes")).toEqual("relax")
+    expect(stressedOut("no")).toEqual("keep going")
+  })
+})
+
 // Write the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
 // Write the function that will make the test pass.
