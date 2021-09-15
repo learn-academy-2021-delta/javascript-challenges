@@ -26,7 +26,21 @@
 
 // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
 var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+
+const filterReturn = (array) => {
+  return array.filter(value, index, array => {
+    return value => {
+      if(value > 0){
+        return array
+      }
+    }
+  })
+
+}
+console.log(filterReturn(filterArrayValues));
 // --> [58, "abcd", true]
+
+
 
 // STRETCH Challenges
 //
