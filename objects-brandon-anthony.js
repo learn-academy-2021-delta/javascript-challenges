@@ -50,3 +50,17 @@ const getLunch = (object) => {
 console.log(getLunch(lunch));
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 console.log(lunch.getData());
+
+
+// Consider this variable:
+var animals = [
+  { name: "Waffles", type: "dog", age: 12 },
+  { name: "Fluffy", type: "cat", age: 14 },
+  { name: "Spelunky", type: "dog", age: 4 },
+  { name: "Hank", type: "cat", age: 11 },
+]
+// Create a function that takes in any array of objects and returns a new array with only those of type cat.
+const cat = (object) =>{
+  if(animals
+}
+// Using the same array of objects above. Create a function that returns a new array with only the names of the animals.
