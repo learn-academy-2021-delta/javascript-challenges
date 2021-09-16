@@ -24,22 +24,16 @@
 // }
 // console.log(newString(comboArr).join(""));
 
-// Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
-var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
+// // Create a function that takes in an array and returns an array without any false, null, 0, or blank values.
+ var filterArrayValues = [58, " ", "abcd", true, null, false, 0]
 
-const filterReturn = (array) => {
-  return array.filter(value, index, array => {
-    return value => {
-      if(value > 0){
-        return array
-      }
-    }
+const fiterArrayValues = (array) =>{
+let eachItem = array.index(value => {
+    return value[0].substring() + value[2].substring()
   })
-
+  return eachItem.join(" ")
 }
-console.log(filterReturn(filterArrayValues));
-// --> [58, "abcd", true]
-
+console.log(eachItem(filterArrayValues))
 
 
 // STRETCH Challenges
