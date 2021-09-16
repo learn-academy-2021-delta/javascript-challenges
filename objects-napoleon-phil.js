@@ -1,20 +1,24 @@
 // Consider this variable:
-var person = [
-  {firstName: "Arthur"},
-  {lastName: "Dent"},
-  {homePlanet:"Earth"}
-]
+var person = {
+  firstName: 'Arthur',
+  lastName: 'Dent',
+  homePlanet: 'Earth',
+
 // Write the code that accesses the first name of the person object.
-console.log(person.firstName);
-// Write the code that accesses the last name of the person object.
-console.log(person.lastName);
-// Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
-console.log(person.homePlanet);
+// console.log(person.firstName);
+// // // Write the code that accesses the last name of the person object.
+// console.log(person.lastName);
+// // // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
+// console.log(person.homePlanet);
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
-const personA = (person) => {
-return array.map (value => {
-   return '${value.firstName} ${value.lastName} is from ${value.homePlanet}'
-})
+
+getData: function() {
+  return '${this.firstName} ${this.lastName} is from planet ${this.homePlanet}'
+}
+}
+console.log(person.getData())
+
+
 // Consider this variable:
 // var product = {
 //   name: "chair", price: 14.99
