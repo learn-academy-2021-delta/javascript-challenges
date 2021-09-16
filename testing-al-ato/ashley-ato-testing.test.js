@@ -10,11 +10,12 @@
 // }
 // energy("tired")
 
-describe('energyChecker',()=>{
-	it('will return a string that says "drink coffee" or "keep working"',()=>{
-		expect(energyChecker(('I am tired')).toEqual('drink coffee, or keep working')
+describe("Are you tired",()=>{
+	it("testing if you are tired"()=>{
+		expect(energyChecker(("yes")).toEqual("drink coffee")
+	})
 })
-})
+		
 
 
 
