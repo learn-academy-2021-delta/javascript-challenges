@@ -21,14 +21,7 @@ describe('energyChecker',()=>{
 
 // Write the function that will make the test pass.
 
-const = energyLevel = (tired, notTired) => {
-    if(tired()=== true)
-    return 'drink coffee'
-}else {
-    return 'keep working'
-}
-}
-console.log(true);
+
 
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
