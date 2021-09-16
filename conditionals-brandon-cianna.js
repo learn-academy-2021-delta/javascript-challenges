@@ -25,6 +25,7 @@
 
 
 // Write a statement that takes two variables that are numbers and outputs the larger number. If the numbers are equal, output "the numbers are the same".
+
 var firstNumber = 6
 var secondNumber = 6
 if (firstNumber > secondNumber){
@@ -34,8 +35,5 @@ if (firstNumber > secondNumber){
 }else{
   console.log("the numbers are the same")
 }
-//
-//
-//
-//
+
 // Write a statement that takes a variable of a number and logs whether the number is odd, even, or zero.
