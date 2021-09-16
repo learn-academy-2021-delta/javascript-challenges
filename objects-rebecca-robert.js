@@ -45,9 +45,6 @@ var person = {
 // edgecases?
 
 // Consider this variable:
-
-
-
 var lunch = {
   name: "PB and Banana",
   type: "sandwich",
@@ -55,16 +52,30 @@ var lunch = {
 }
 
 
-
 // Write the code that accesses the ingredients property.
 
-  console.log(lunch.ingredients)
+  // console.log(lunch.ingredients)
 
-// Write the code that access the 3rd ingredient of the lunch object.
+// Write the code that accesses the 3rd ingredient of the lunch object.
+  
+  //banana
+  //.filter() > filters through an array to get banana
 
+  // console.log(lunch.ingredients.filter((values)=>{ 
+  //   return values === "banana"
+  // }))
 
+  //we have an object called lunch, inside lunch is an array called ingredients
+  //they're just asking us to access it
+  //objects -> we can access key-pairs (key(properties) and values) using dot notation lunch.ingredients
+  //arrays -> we can access an array using indexes
+
+  // console.log(lunch.ingredients[2]);
+  // console.log(typeof ['banana']) //type of arrays = object
+  // console.log(typeof "banana")
 
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
 // var animals = [
