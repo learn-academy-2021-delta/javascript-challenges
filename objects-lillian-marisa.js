@@ -37,30 +37,53 @@ var person = {
 
 console.log(person.myInfo());
 
-// return: ''
-// myInfo: function(){
-//   return `${this.firstName} + ${this.lastName} is from planet ${this.homePlanet}`
-// }
-// }
-// console.log(person.myInfo());
-
-
-
 // Consider this variable:
-// var product = {
-//   name: "chair", price: 14.99
-// }
+
+
 // Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+
+var product = {
+name: "chair", price: 14.99,
+ describeProduct: function() {
+   return `This product is a ${this.name}. It costs ${this.price}`
+ }
+ }
+ console.log(product.describeProduct())
+
 // Consider this variable:
-// var lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
-// }
+
 // Write the code that accesses the ingredients property.
-// Write the code that access the 3rd ingredient of the lunch object.
+// var lunch = {
+//    name: "PB and Banana",
+//    type: "sandwich",
+//    ingredients: ["bread", "peanut butter", "banana"]
+// }
+// console.log(lunch.ingredients)
+//
+// // Write the code that access the 3rd ingredient of the lunch object.
+//
+// console.log(lunch.ingredients[2])
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+var lunch = {
+   name: "PB and Banana",
+   type: "sandwich",
+   ingredients: ["bread", "peanut butter", "banana"].join(", ")
+
+}
+console.log(`The ingredients for a ${lunch.name} ${lunch.type} are ${lunch.ingredients}.`)
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// var lunch = {
+//    name: "PB and Banana",
+//    type: "sandwich",
+//    ingredients: ["bread", "peanut butter", "banana"].join(", "),
+//    getIngredients: function() {
+//      return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients}.`
+//    }
+// }
+// console.log(lunch.getIngredients())
+
 // Consider this variable:
 // var animals = [
 //   { name: "Waffles", type: "dog", age: 12 },
