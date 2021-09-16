@@ -32,7 +32,7 @@ const filterReturn = (array) => {
     return value => {
       if(value > 0){
         return array
-      }
+      } 
     }
   })
 
