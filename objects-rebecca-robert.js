@@ -17,31 +17,53 @@ var person = {
 
 // Update the person object with a method that logs "Arthur Dent is from planet Earth".
 //method is a function that belongs to an object -> create a function inside person that returns "Arthur Dent is from planet Earth"
-
-// person.newSentence = function(){return `${this.firstName} ${this.lastName} is from planet Earth`}; 
+//
+// person.newSentence = function(){return `${this.firstName} ${this.lastName} is from planet Earth`};
 // //created a new property that is a function named newSentence
 // console.log(person.newSentence());
+//
+//
+//
 
-
-
-
-
-// Consider this variable:
-var product = {
-  name: "chair", price: 14.99
-}
-// Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
-
-
-
-// Consider this variable:
-// var lunch = {
-//   name: "PB and Banana",
-//   type: "sandwich",
-//   ingredients: ["bread", "peanut butter", "banana"]
+//
+// // Consider this variable:
+// var product = {
+//   name: "chair", price: 14.99
 // }
+// // Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+//
+//     const describeProduct = (product) => {
+//       return ` The product is a ${product.name}. It costs $${product.price}`
+//     }
+// console.log(describeProduct(product))
+//
+
+
+// what is the prob
+// what are the tools
+// expected output
+// edgecases?
+
+// Consider this variable:
+
+
+
+var lunch = {
+  name: "PB and Banana",
+  type: "sandwich",
+  ingredients: ["bread", "peanut butter", "banana"]
+}
+
+
+
 // Write the code that accesses the ingredients property.
+
+  console.log(lunch.ingredients)
+
 // Write the code that access the 3rd ingredient of the lunch object.
+
+
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // Consider this variable:
