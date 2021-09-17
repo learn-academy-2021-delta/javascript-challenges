@@ -65,10 +65,10 @@ class Latte {
   }
 
   latteProfile(){
-    return(`${this.flavor} latte: ${this.milk}, ${this.shots()}`)
+    return(`${this.flavor} latte: ${this.milk}, ${this.numshots()}`)
   }
 
-  shots(){
+  numshots(){
     if(this.shots > 1){
       return `${this.shots} shots`
     } else {
@@ -94,5 +94,24 @@ console.log(hazelnutLatte);
 //
 // >>>>>>>>VOLUME OF A CYLINDER
 // A. Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
-//
+class Volume {
+  constructor (pi, radius, height) {
+    this.pi = 3.14,
+    this.radius = radius,
+    this.height = height
+
+cylinderProfile({
+  return(`${this.pi} * (${this.radius}**2) * ${this.height}`)
+})
+
+volumeFormula(){
+  if(this.radius <= 0){
+    return("error")
+  } else {
+    return ${this.radius}
+  }
+}
+var rH = new Volume(1, 2)
+console.log(rH.cylinderProfile());
+
 // B. Write the code that creates three unique cylinder objects
