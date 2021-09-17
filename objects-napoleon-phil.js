@@ -1,8 +1,8 @@
 // Consider this variable:
 var person = {
-  firstName: 'Arthur',
-  lastName: 'Dent',
-  homePlanet: 'Earth',
+  firstName: "Arthur",
+  lastName: "Dent",
+  homePlanet: "Earth",
 
 // Write the code that accesses the first name of the person object.
 // console.log(person.firstName);
