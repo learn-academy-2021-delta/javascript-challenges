@@ -24,23 +24,26 @@
 // //Input is a string.
 // Declare a variable name that contains fullName, homePlanet
 // //Output will personName "is from planet" planet name
-var person = {
-  firstName: "Arthur",
-  lastName: "Dent"
-}
-
-var homePlanet = "Earth"
-
-const personPlanet = (string) => {
-
-  return `${person.firstName} ${person.lastName} is from planet ${homePlanet}`
-}
-console.log(personPlanet())
-// Consider this variable:
-// var product = {
-//   name: "chair", price: 14.99
+// var person = {
+//   firstName: "Arthur",
+//   lastName: "Dent"
 // }
-// Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+
+// var homePlanet = "Earth"
+
+// const personPlanet = (string) => {
+
+//   return `${person.firstName} ${person.lastName} is from planet ${homePlanet}`
+// }
+// console.log(personPlanet())
+
+
+ Consider this variable:
+ var product = {
+  name: "chair", price: 14.99
+ }
+Write a function called describeProduct takes product as an argument and logs "The product is a chair. It costs $14.99".
+
 // Consider this variable:
 // var lunch = {
 //   name: "PB and Banana",
