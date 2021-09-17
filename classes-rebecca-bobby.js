@@ -37,14 +37,40 @@ class Coffee {
 
 //
 // Write the code that makes a coffee with 2 sugars. Then write the code that outputs the coffee's profile.
-  console.log(new Coffee("black", 1, 2).coffeeProfile());
+  // console.log(new Coffee("black", 1, 2).coffeeProfile());
+
 // Latte Maker
+
+class LatteMaker {
+  constructor(flavor, milkType, shots){
+    this.flavor = flavor,
+    this.milkType = milkType,
+    this.shots = shots
+  }
+  latteProfile(){
+    return (`${this.flavor}: ${this.milkType}, ${this.shots}`)
+  }
+
+}
+
 // Write a Latte class that receives a flavor, a milk type and a number of shots.
-//
+
+// var bobbyLatte = new LatteMaker("mocha","whole milk", 4)
+// var rebeccaLatte = new LatteMaker("pumpkin spice", "oat milk", 7)
+// console.log(bobbyLatte)
+// console.log(rebeccaLatte)
+
 // Write a method for your Latte class that outputs the latte's profile.
-//
+
+//see lines 50-51
+
 // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
-//
+
+//We want to: log the class passing in specific arguments by calling on the latteProfile method within it
+
+// console.log(new LatteMaker("regular", "whole", 1).latteProfile());
+
+
 // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
 //
 // Volume of a Cylinder
