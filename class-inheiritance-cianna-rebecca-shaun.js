@@ -1,17 +1,4 @@
 // Challenges
-
-class Car{
-    constructor(model, year){
-        this.model = model
-        this.year = year
-    }
-    wheels(){
-    return 4
-    }
-} 
-var myCar = new Car("Apple Car", 1967)
-console.log(myCar);
-console.log(myCar.wheels());
 // Story: As a programmer, I can make a car.
 // Write a variable called myCar which is an instance of the class Car
 // Story: As a programmer, I can give my car a model on initialization.
@@ -22,13 +9,6 @@ console.log(myCar.wheels());
 // Calling the method wheels will return 4
 // Story: As a programmer, I can make a Tesla car.
 // class Tesla inherits from class Car
-class Tesla extends Car{
-    constructor(model, year){
-        super(model,year)
-    }
-}
-var myTesla = new Tesla("Model X", 2022)
-console.log(myTesla);
 // Create an object called myTesla which is a instance of class Tesla
 // Story: As a programmer, I can give my Tesla a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
@@ -48,8 +28,80 @@ console.log(myTesla);
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
 // Story: As a programmer, I can give my Volkswagen a year on initialization.
 // The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
+class Car{
+    constructor(model, year){
+        this.model = model
+        this.year = year
+        //this.lightsOn = false //if we were to use strings
+        this.lights = "off"
+    }
+
+    //string version
+    // lightsOnOrOff(){
+    //     if(lights === "off"){
+    //         return lights = "on";
+    //     }
+    //     else{
+    //         return lights = "off";
+    //     }
+    // }
+
+    lightsOnOrOff(){
+        if(lightsOn){ //if lightsOn = true we want to turn them off
+            return this.lightsOn = false;
+            //change it to false
+        }else{
+            return this.lightsOn = true;
+        }
+    }
+
+    wheels(){
+    return 4
+    }
+} 
+
+var myCar = new Car("Apple Car", 1967)
+console.log(myCar);
+console.log("Number of Wheels: " + myCar.wheels());
+
+//Tesla
+class Tesla extends Car{
+    constructor(model, year){
+        super(model,year)
+    }
+}
+var myTesla = new Tesla("Model X", 2022)
+console.log(myTesla);
+
+//Toyota
+class Toyota extends Car{
+    constructor(model, year){
+        super(model, year)
+    }
+}
+
+var myToyota = new Toyota("Camry", 2022)
+console.log(myToyota);
+
+//Volkswagen
+class Volkswagen extends Car {
+    constructor(model, year){
+        super(model, year)
+    }
+}
+
+var myVolkswagen = new Volkswagen("Passat", 2021)
+console.log(myVolkswagen);
+
+
+//CURRENTLY ON THIS QUESTION ========================================================================
 // Story: As a programmer, I can give all my cars a lights property. Lights start in the off position.
+    //lights should be a property and they should start as "off"
+    //technically we can do boolean values (Are lights on? True or False OR We can use strings light = "on" or "off"
 // Story: As a programmer, I can turn the lights in all my cars on and off.
+    //it sounds like this should be a function to turn lights on and off. Could be two functions or built into one i guess?
+
+
 // Story: As a programmer, I can give all my cars a signal property. Turn signal starts in the off position.
 // Story: As a programmer, I can determine the speed of a car. Speed starts at 0 mph.
 // Story: As a programmer, I can speed my Tesla up by 10 per acceleration.
