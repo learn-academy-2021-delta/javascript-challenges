@@ -38,6 +38,21 @@ console.log(seabiscuit);
 // Story: As a programmer, I can make a Tesla car.
 // class Tesla inherits from class Car
 
+class Arabian extends Horse {
+  constructor(snack, horsepower, purebred, age, coatColor, weight, battleHorse, origin, gender){
+    super(snack, horsepower, purebred, age);
+      this.coatColor = "Gray"
+      this.weight = 800
+      this.battleHorse = true
+      this.origin = "Egypt"
+      this.gender = "male"
+  }
+}
+
+let marengo = new Arabian("apples", 25, false, 38)
+console.log(marengo);
+
+
 // Create an object called myTesla which is a instance of class Tesla
 // Story: As a programmer, I can give my Tesla a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
@@ -48,6 +63,24 @@ console.log(seabiscuit);
 // Story: As a programmer, I can make a Toyota car.
 // class Toyota inherits from class Car
 // create an object called myToyota which is a instance of class Toyota
+
+class Clydesdale extends Horse {
+  constructor(snack, horsepower, purebred, age, coatColor, weight, agricultureHorse, orgin, gender) {
+    super(snack, horsepower, purebred, age);
+    this.coatColor = "Brown and White"
+    this.weight = 2,200
+    this.agricultureHorse = true
+    this.origin = "Scottland"
+    this.gender = "female"
+
+  }
+}
+
+
+let bud = new Clydesdale("beer", 5,  true, 4)
+console.log(bud);
+
+
 
 // Story: As a programmer, I can give my Toyota a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
