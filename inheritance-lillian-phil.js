@@ -37,6 +37,7 @@ class Car {
     this.lights = 0
     this.on = false
     this.signal = 0
+    this.speed = 0
   }
   lightsOn(){
     this.lights = 1
@@ -54,35 +55,66 @@ class Car {
     this.signal = 0
     this.on = false
  }
+  carInfo(){
+    `The info of your car is ${this.model}, this ${this.year, }`
+  }
 }
-let Tesla = new Car(S, 2021)
+let myCar = new Car(S, 2021)
 
-class myTesla extends Car{
+class Tesla extends Car{
   constructor(model, year, speed=0){
     super(model, year)
     this.speed = speed
   }
+  gas(){
+    this.on? this.speed = this.speed + 10: "Turn your car on"
 }
-let Toyota = new Car(Corolla, 1992)
+  braking(){
+    if(this.speed <= 7){
+      this.speed = 0
+    } else {this.speed = this.speed - 7
+    }
+  }
+}
 
-class myToyota extends Car{
+let myTesla = new Tesla("modelX", 2020)
+
+class Toyota extends Car{
     constructor(model, year, speed=0){
       super(model, year)
       this.speed = speed
     }
+    gas(){
+      this.on? this.speed = this.speed + 5: "Turn your car on"
   }
-  let Volkswagen = new Car(Jetta, 2007)
+    braking(){
+      if(this.speed <= 2){
+        this.speed = 0
+      } else {this.speed = this.speed - 2
+      }
+    }
+  }
+  let myToyota = new Toyota("Tacoma", 2007)
 
-  class myVolkswagen extends Car{
+  class Volkswagen extends Car{
     constructor(model, year, speed=0){
       super(model, year)
       this.speed = speed
     }
+    gas(){
+      this.on? this.speed = this.speed + 7: "Turn your car on"
+  }
+    braking(){
+      if(this.speed <= 5){
+        this.speed = 0
+      } else {this.speed = this.speed - 5
+      }
+    }
   }
 
+  }
 
 }
-
 
 
 
