@@ -3,14 +3,69 @@
 // Story: As a programmer, I can give my car a model on initialization.
 
 class Car {
-  constructor (myCar, year) {
-    this.model = "generic car"
+  constructor (model, year) {
+    this.model = model
     this.year = year
     this.wheels = 4
   }
+ engineOff(){
+this.lights = "off"
+this.signals = "off"
+this.speed = 0
+ }
+engineOn(){
+  this.lights = "on"
+  this.signals = "operational"
+  this.speed = 0
 }
+// carInfo(){
 
-
+// }
+}
+class Tesla extends Car {
+  constructor(year){
+    super(year) 
+    this.model = "Tesla"
+  }
+  acceleration(){
+    this.speed = this.speed + 10
+  }
+  braking(){
+    this.speed = this.speed - 7
+  }
+}
+class Toyota extends Car {
+  constructor (year) {
+    super(year)
+    this.model = "Toyota"
+  }
+  acceleration(){
+    this.speed = this.speed + 5
+  }
+  braking(){
+    this.speed = this.speed - 2
+  }
+}
+class Volkswagon extends Car {
+  constructor (model, year) {
+    super(model, year)
+    this.model = "Volkwagon"
+  }
+  acceleration(){
+    this.speed = this.speed + 7
+  }
+  braking(){
+    this.speed = this.speed - 5
+  }
+}
+let tesla = new Tesla(2021)
+tesla.engineOn()
+console.log(tesla);
+tesla.acceleration()
+console.log(tesla);
+tesla.acceleration()
+console.log(tesla);
+var carInfo = new Car
 // The model for the car class can be "generic car"
 // Story: As a programmer, I can give my car a year on initialization.
 // The year for the car class can be "myCar year"
