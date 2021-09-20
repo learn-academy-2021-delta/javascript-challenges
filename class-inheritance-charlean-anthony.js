@@ -1,7 +1,7 @@
 // Story: As a programmer, I can make a car.
 // Write a variable called myCar which is an instance of the class Car
 //done
-class car {
+class Car {
     constructor(model = "Generic car", year = "myCar year"){
         this.model = model
         this.year = year
@@ -9,8 +9,9 @@ class car {
     wheels(){
         this.tires = 4
     }
+
 }
-let myCar = new car()
+let myCar = new Car()
 myCar.wheels()
 console.log(myCar);
 
@@ -26,23 +27,31 @@ console.log(myCar);
 // Story: As a programmer, I can make a Tesla car.
 // class Tesla inherits from class Car
 // Create an object called myTesla which is a instance of class Tesla
-class tesla extends car {
-    constructor(){
-        super()
-    }
+
+class Telsa extends Car{
+  constructor(model, year){
+    super(model, year)
+  }
 }
-myTesla = new tesla()
-console.log(tesla);
+var myTelsa = new Telsa()
+console.log(myTelsa)
+
 // Story: As a programmer, I can give my Tesla a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
 
-// Story: As a programmer, I can give my Tesla a year on initialization.
-// The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
+ // Story: As a programmer, I can give my Tesla a year on initialization.
+ // The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
 
-// Story: As a programmer, I can make a Toyota car.
-// class Toyota inherits from class Car
-// create an object called myToyota which is a instance of class Toyota
-
+ // Story: As a programmer, I can make a Toyota car.
+ // class Toyota inherits from class Car
+ // create an object called myToyota which is a instance of class Toyota
+ class Toyota extends Car{
+   constructor(model, year){
+     super(model, year)
+   }
+ }
+ var myToyota = new Toyota()
+ console.log(myToyota)
 // Story: As a programmer, I can give my Toyota a model on initialization.
 // The model can be inherited from the parent class Car by passing the model through the constructor() and super() on the child class
 
@@ -58,6 +67,13 @@ console.log(tesla);
 
 // Story: As a programmer, I can give my Volkswagen a year on initialization.
 // The year can be inherited from the parent class Car by passing the year through the constructor() and super() on the child class
+class Volkswagen extends Car{
+  constructor(model, year){
+    super(model, year)
+  }
+}
+var myVolkswagen = new Volkswagen()
+console.log(myVolkswagen)
 
 // Story: As a programmer, I can give all my cars a lights property. Lights start in the off position.
 
