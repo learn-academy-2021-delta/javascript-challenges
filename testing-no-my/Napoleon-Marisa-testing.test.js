@@ -1,28 +1,56 @@
-// IMPORTANT: Write the test FIRST, see it fail, then write the code to make it PASS.
-//
-// IMPORTANT: You do not need to comment out the old tests or functions. The purpose of tests are to be AUTOMATED. Commenting them out defeats that purpose.
-//
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-describe('drinking coffee or not', ()=>{
-  it('returns "drink coffee" if you are tired and "keep working" if you are not tired.',()=>{
-    expect(lateNight("Im tired")).toEqual("Drink coffee")
+describe("areYouTired",()=>{
+  test("returns drink coffee or keep working based on input", ()=>{
+    expect(areYouTired("yes")).toEqual("drink coffee")
+    expect(areYouTired("no")).toEqual("keep working")
   })
 })
-// Write the function that will make the test pass.
-//make a function called lateNight
-const lateNight = (a,b) => {
-  console.log("Im tired", "Drink coffee");
 
-
-  if(a === "Im tired") {
-    return 
+const areYouTired = (string)=> {
+  if(string === "yes"){
+    return "drink coffee"
+  } else if (string === "no") {
+    return "keep working"
   }
-
 }
-//conditional if upEarly return drink coffee.. else keep working
+
+
+// Write the function that will make the test pass.
+
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
+describe("areYouStressed",()=>{
+  test("returns relax or keep going based on input", ()=>{
+    expect(areYouStressed("yes")).toEqual("relax")
+    expect(areYouStressed("no")).toEqual("keep working")
+  })
+})
+
+const areYouStressed = (string)=> {
+  if(string === "yes"){
+    return "relax"
+  } else if (string === "no") {
+return "keep working"
+  }
+}
 // Write the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
+describe("budgetTest",()=>{
+  test("return in budget if a price is lower than $300", ()=>{
+    expect(budgetTest("less than $300 ")).toEqual("in budget")
+    expect(budgetTest("greater than $300")).toEqual("not in budget")
+  })
+})
+
+const budgetTest = (string)=> {
+  if (string === "less than $300"){
+    return "in budget"
+  } else if (string === "greater than $300") {
+
+  }
+
+  ]
+  return
+}
 // Write the function that will make the test pass.
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number.
 // Write the function that will make the test pass.

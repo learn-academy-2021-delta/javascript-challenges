@@ -1,25 +1,30 @@
-// IMPORTANT: Write the test FIRST, see it fail, then write the code to make it PASS.
-//
-// IMPORTANT: You do not need to comment out the old tests or functions. The purpose of tests are to be AUTOMATED. Commenting them out defeats that purpose.
-//
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-describe('drinking coffee or not', ()=>{
-  it('returns "drink coffee" if you are tired and "keep working" if you are not tired.',()=>{
-    expect(lateNight("Im tired")).toEqual("Drink coffee")
-  })
+
+// function energy (value){
+//     if(value === "tired"){
+//         return " drink coffee"
+    
+//     }else{
+//         return "keep working"
+//     }
+// }
+// energy("tired")
+
+describe("Are you tired",()=>{
+	it("testing if you are tired"()=>{
+		expect(energyChecker(("yes")).toEqual("drink coffee")
+	})
 })
+		
+
+
+
+
 // Write the function that will make the test pass.
-//make a function called lateNight
-const lateNight = (a,b) => {
-  console.log("Im tired", "Drink coffee");
 
 
-  if(a === "Im tired") {
-    return 
-  }
 
-}
-//conditional if upEarly return drink coffee.. else keep working
+
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
 // Write the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
@@ -43,4 +48,4 @@ const lateNight = (a,b) => {
 // Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 // Write the function that will make the test pass.
 // Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'.
-// Write the function that will make the test pass.
+// // Write the function that will make the test pass.

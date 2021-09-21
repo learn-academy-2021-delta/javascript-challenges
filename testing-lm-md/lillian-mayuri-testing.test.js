@@ -1,25 +1,31 @@
-// IMPORTANT: Write the test FIRST, see it fail, then write the code to make it PASS.
 //
-// IMPORTANT: You do not need to comment out the old tests or functions. The purpose of tests are to be AUTOMATED. Commenting them out defeats that purpose.
-//
+
+
+
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-describe('drinking coffee or not', ()=>{
-  it('returns "drink coffee" if you are tired and "keep working" if you are not tired.',()=>{
-    expect(lateNight("Im tired")).toEqual("Drink coffee")
-  })
+describe('should take strings of whether you are tired or not and return whether you should drink coffee',() => {
+    test('should tell u drink coffee if u are tired',() => {
+     expect(areTired("Yes")).toEqual("drink Coffee")
+     expect(areTired("No")).toEqual("keep working")
+    })
 })
-// Write the function that will make the test pass.
-//make a function called lateNight
-const lateNight = (a,b) => {
-  console.log("Im tired", "Drink coffee");
+// Write the function that will make the test pass
 
-
-  if(a === "Im tired") {
-    return 
-  }
-
+const areTired = (string)=> {
+    if(string === "Yes") {
+        return "drink coffee"
+    } else if(string === "No"){
+        return "keep working"
+    }
 }
-//conditional if upEarly return drink coffee.. else keep working
+        
+//declare function named 
+    // function should take two arguments
+    //conditional if tired 
+        //return true =>drink coffee
+    //otherwise
+        //return false =>keep working
+
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
 // Write the function that will make the test pass.
 // Write the test for a function that returns "in budget" if a price is lower than $300.
@@ -44,3 +50,4 @@ const lateNight = (a,b) => {
 // Write the function that will make the test pass.
 // Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'.
 // Write the function that will make the test pass.
+// Back

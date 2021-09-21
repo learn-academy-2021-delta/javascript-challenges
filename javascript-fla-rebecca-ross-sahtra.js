@@ -93,8 +93,8 @@ console.log(largestNum(indexHighestNumber));
 // STRETCH Challenges
 
 // Create a function that takes in two arrays and returns one array with no duplicate values.
-var arr1 = [3, 7, 10, 5, 4, 3, 3]
-var arr2 = [7, 8, 2, 3, 1, 5, 4]
+var array1 = [3, 7, 10, 5, 4, 3, 3]
+var array2 = [7, 8, 2, 3, 1, 5, 4]
 // // --> [3, 7, 10, 5, 4, 8, 2, 1]
 
 const bestArr = (arr1, arr2) => {
@@ -107,7 +107,7 @@ const bestArr = (arr1, arr2) => {
             newArr.push(arr1[0]);
         } else if (newArr.length > 0){
             for(let j= 0; j<newArr.length; j++){
-                if (newArr[i] === catArr[j]){
+                if (newArr[i] === catArr[j]) {
 
                 } 
             }
@@ -115,7 +115,7 @@ const bestArr = (arr1, arr2) => {
     }
         return newArr
 }
-console.log(bestArr(arr1,arr2))
+console.log(bestArr(array1,array2))
 
 // in for loop check if @ array [i] !== anything in newarray[i], in that case 
 
