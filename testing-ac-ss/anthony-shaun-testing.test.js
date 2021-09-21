@@ -12,9 +12,12 @@ describe('drinking coffee or not', ()=>{
 //make a function called lateNight
 const lateNight = (a,b) => {
   console.log("Im tired", "Drink coffee");
+
+
   if(a === "Im tired") {
     return 
   }
+
 }
 //conditional if upEarly return drink coffee.. else keep working
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed.
